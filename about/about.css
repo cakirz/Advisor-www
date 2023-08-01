@@ -1,0 +1,293 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+img {
+  vertical-align: middle;
+}
+.overview > img {
+  box-shadow: -13px 15px 0px 0px #c1bdbd;
+  margin-bottom: 2rem;
+}
+.overview {
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.section{
+  background-color: #f3f5fa;
+  padding: 1rem;
+}
+
+.company-history {
+  background-color: #f3f5fa;
+  max-width: 1200px;
+  padding: 1rem;
+  border-left: 1px solid black;
+  list-style:circle;
+
+}
+.company-history li .history-content:before {
+  background-color: #09a223;
+}
+.company-history li .history-content:before {
+  position: absolute;
+  left: -22px;
+  top: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  content: "";
+}
+
+.company-history li .year {
+  width: 94px;
+  font-size: 24px;
+  position: relative;
+  left: -114px;
+  color: green;
+}
+
+
+ul.company-history li {
+  position: relative;
+  list-style-type: none;
+}
+.persons {
+  display: grid;
+  padding-top: 4rem;
+  grid-template-columns: auto auto auto;
+}
+
+.person {
+  background-color: #e9e9e9;
+  padding: 1rem;
+  text-align: center;
+  font-size: large;
+}
+.person > h4 {
+  color: #09a223;
+}
+.person > img {
+  margin: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.card {
+  background-color: aquamarine;
+  padding: 2rem 1rem;
+  border-radius: 0%;
+  color: #fff;
+  text-align: center;
+}
+p {
+  margin: 0 0 15px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 31px;
+}
+.p {
+  padding: 4rem;
+}
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+.partners > .center > a {
+  background-color: #09a223;
+  padding: 0.1rem;
+  border-radius: 100px;
+  color: #fff;
+}
+.center {
+  display: flex;
+  justify-content: space-evenly;
+}
+.advisor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: aqua;
+  padding: 4rem;
+  font-size: large;
+  gap: 10px 20px;
+}
+.advisor > div {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.advisor > p {
+  margin: 2rem;
+}
+input {
+  padding: 1rem;
+  border-style: hidden;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+}
+form {
+  display: grid;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  background-color: #e9e9e9;
+}
+form > div > ul > button {
+  background-color: #e9e9e9;
+  border-radius: 100px;
+  padding: 1rem;
+}
+form > div > ul > button:hover {
+  background-color: #09a223;
+}
+form > div > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+form > button {
+  border-radius: 100px;
+  background-color: #09a223;
+  color: #fff;
+}
+.footer {
+  background-color: #e9e9e9;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.vertical-line {
+  border-left: 1px solid black; /* Dikey çizgi rengi ve kalınlığı */
+  height: 100px; /* Dikey çizginin yüksekliği */
+}
+.call {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: #fff;
+  padding: 1rem;
+}
+.call > div {
+  margin: 1rem;
+}
+
+.fakeimg {
+  width: 1000px;
+  height: 350px;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
