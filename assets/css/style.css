@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 20px;
+  
+  
+}
+header ul .logo{
+  width: 200px;
+  margin-left: 50px;
+} 
+
+header ul li:last-child {
+  border-right: none;
+}
+
+header ul li:hover {
+  background: #28e43e;
+}
+
+header ul li {
+  list-style: none;
+  position: relative;
+  padding: 10px 15px;
+  transition: 0.5x;
+  box-sizing: border-box ;
+  border-right: 1px solid rgba(47, 255, 61, 0.2);
+  font-size: 25px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 0 20px;
+  color: #000000;
+}
+
+header ul li ul {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  display: block;
+  background: #d4d4d4;
+  width: 206px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+header ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+header ul li ul li {
+  border-bottom: 1px solid rgba(46, 208, 48, 0.4);
+  width: 206px;
+  transition: 0.5s;
+  
+}
+
+header>div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-top {
+  background: #3A2C5F;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top>span {
+  background: #483A6D;
+  padding: 20px 14px 20px 60px;
+  position: relative;
+}
+
+.header-top>span:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left:0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 56px 0 0 56px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.header-top>span:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -56px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 56px 56px 0 0;
+  border-color: #483A6D transparent transparent transparent;
+}
+
+.header-redirects {
+  display: flex;
+  gap: 40px;
+  padding-right: 60px;
+}
+
+.header-redirects a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.header-top>div::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 1298px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 70px 70px 0 0;
+  border-color: #ffffff transparent transparent transparent;
+  transform: scaleY(-1) scaleX(-1);
+  
+}
+.container{
+  padding-right: 50px;
+}
